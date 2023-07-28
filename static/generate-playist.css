@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+body{
+  background-color: #2E9A25;
+
+}
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding:10px; */
+  height: 10vh;
+  margin:0;
+}
+nav>h1{
+  padding-left: 1rem;
+}
+.my-profile{
+  padding-right: 1rem;
+}
+#s{
+  color:black;
+  font-family: 'Lemon', cursive;
+  font-size: 2rem;
+}
+#heading{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+}
+
+nav> div>a{
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: black;
+  color: white;
+  border-radius:16px;
+  border-width: 0;
+  text-decoration: none;
+}
+
+.body{
+  background-color: #2E9A25;
+  background: linear-gradient(180.06deg, rgba(0, 0, 0, 0.67) -22.91%, rgba(217, 217, 217, 0) 99.95%);
+border-radius: 30px 30px 0px 0px;
+
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+.link,.submit-btn,.name,.method,.library-check{
+  padding:1.5rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+input,select,.submit-btn>button{
+  width: 20rem;
+  padding: 1rem 1rem;
+  color: white;
+  background-color:rgb(49, 49, 49);
+  border-radius:20px;
+  border-width:0;
+  text-align: center;
+  outline-width: 0;
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  font-size:1rem;
+  opacity: 1; /* Firefox */
+}
+
+select{
+  font-size: 1rem;
+  width: 22rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y:10px;
+  padding: 1rem;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+.submit-btn>button{
+  font-size: 1rem;
+  width:22rem;
+  cursor: pointer;
+}
+
+
+footer{
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgb(49, 49, 49);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+footer>button{
+  background-color:rgb(49, 49, 49);
+  border-width: 0;
+  color: white;
+  font-size:1rem;
+  cursor: pointer;
+}

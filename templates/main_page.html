@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sortify</title>
+  <link rel="stylesheet" href="static/playlist.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lemon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <h1 id="heading"><span id="s">S</span>ORTIFY</h1>
+    <div class="my-profile">
+      <a href="#">My Profile</a>
+    </div>
+  </nav>
+  <div class="body">
+    <form action="/classify" method="post">
+      <div class="link"><input type="text" name="url" id="link" placeholder="Enter Link"></div>
+      <div class="name"><input type="text" id="name" placeholder="Enter Playlist Name" name="playlist_name"></div>
+      <div class="method">
+        <select name="method" id="method">
+          <option value="" selected disabled hidden>Select Method</option>
+          <option value="sentiment">Positive</option>
+          <option value="genre">Negative</option>
+          <option value="genre">Neutral</option>
+        </select>
+      </div>
+      <div class="submit-btn"><button type="submit" name="generate">Generate Playlist</button></div>
+    </form>
+  </div>
+  <footer>
+    <button>Create Playlist</button>
+    <button>Home</button>
+    <button>Your Library</button>
+  </footer>
+</body>
+
+</html>
